@@ -1,56 +1,33 @@
+'use strict';
 
-<!DOCTYPE html>
-<html lang="en">
+const e = React.createElement;
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>React Local</title>
-  <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
-  <script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
-  <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
-</head>
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
 
-<body>
-  <div id="root"></div>
-
-<script type="text/babel">
-// Obtain the root 
-    const rootElement = document.getElementById('root')
-// Create a ES6 class component    
-    class ShoppingList extends React.Component { 
-// Use the render function to return JSX component      
-    render() { 
-        return (
-        <div className="shopping-list">
-        <h1>Shopping List for {this.props.name}</h1>
-          <ul>
-            <li>Instagram</li>
-            <li>WhatsApp</li>
-            <li>Oculus</li>
-          </ul>
-        </div>
-      );
-      } 
+  render() {
+    if (this.state.liked) {
+      return 'You liked comment number ' + this.props.commentID;
     }
-// Create a function to wrap up your component
-function App(){
-  return(
-  <div>
-    <ShoppingList name="@luispagarcia on Dev.to!"/>
-  </div>
-  )
+
+    return e(
+      'button',
+      { onClick: () => this.setState({ liked: true }) },
+      'Like'
+    );
+  }
 }
 
-
-// Use the ReactDOM.render to show your component on the browser
+// Find all DOM containers, and render Like buttons into them.
+document.querySelectorAll('.like_button_container')
+  .forEach(domContainer => {
+    // Read the comment ID from a data-* attribute.
+    const commentID = parseInt(domContainer.dataset.commentid, 10);
     ReactDOM.render(
-      <App />,
-      rootElement
-    )
-</script>
-
-</body>
-
-</html>
+      e(LikeButton, { commentID: commentID }),
+      domContainer
+    );
+  });
