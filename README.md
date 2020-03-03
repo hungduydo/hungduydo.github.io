@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project build for deploy an web page at hungduydo.github.io
 
 ## Available Scripts
 
