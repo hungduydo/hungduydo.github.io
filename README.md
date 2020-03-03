@@ -1,10 +1,11 @@
 # hungduydo.github.io
 
-This repo create an Angular app and build index.html file show all project which i have implement.
+This repo create an React app show my experience and project i have coporation.
 
 ## Folder structure 
 - index.html
-- my_life
+- source
+  - build
   - src
-  - dist
   - package.json
+- README.md
