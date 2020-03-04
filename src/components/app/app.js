@@ -1,28 +1,32 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import logo from '../../images/logo.svg';
 import './app.css';
+import Pageable from 'pageable';
 import Header from '../header/header';
 
-class App extends Component {
+export default class App extends Component {
+  pages;
+  componentDidMount() {
+    this.pages = new Pageable("#container", {
+      pips: true,
+      animation: 300,
+      delay: 0,
+      throttle: 50,
+      swipeThreshold: 50,
+      orientation: "vertical",
+      freeScroll: false,
+    });
+  }
+
   render() {
     return (<div className="app">
       <Header></Header>
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-        <p>
-          Edit <code>src/components/app/app.js</code> and save to reload all.
-        </p>
-        <a
-          className="app-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="container">
+        <div data-anchor="Page 1"></div>
+        <div data-anchor="Page 2"></div>
+        <div data-anchor="Page 3"></div>
+        <div data-anchor="Page 4"></div>
+      </div>
     </div>)
   }
 }
-
-export default App;

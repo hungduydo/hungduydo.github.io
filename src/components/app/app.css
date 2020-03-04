@@ -27,7 +27,20 @@
 .app-link {
   color: #61dafb;
 }
+#page-1 {
+  background-color: red;
+}
+#page-2 {
+  background-color: blue;
+}
 
+#page-3 {
+  background-color: yellow;
+}
+
+#page-4 {
+  background-color: cyan;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
