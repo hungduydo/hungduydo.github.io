@@ -1,14 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from '../../images/logo.svg';
 import './app.css';
+import Header from '../header/header';
 
-function App() {
-  return (
-    <div className="app">
+class App extends Component {
+  render() {
+    return (<div className="app">
+      <Header></Header>
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
         <p>
-          Edit <code>src/components/app/app.js</code> and save to reload.
+          Edit <code>src/components/app/app.js</code> and save to reload all.
         </p>
         <a
           className="app-link"
@@ -19,8 +21,8 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
+    </div>)
+  }
 }
 
 export default App;
