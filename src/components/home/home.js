@@ -1,7 +1,7 @@
 import Pageable from 'pageable';
 import React, { Component } from 'react';
 import './home.css';
-import { Banner, About, Resume, Works } from './index';
+import { Banner, About, Resume, Works, Contact } from './index';
 
 export class Home extends Component {
   pages;
@@ -11,7 +11,7 @@ export class Home extends Component {
       animation: 300,
       delay: 0,
       throttle: 50,
-      swipeThreshold: 50,
+      swipeThreshold: 150,
       orientation: "vertical",
       freeScroll: false,
     });
@@ -24,6 +24,7 @@ export class Home extends Component {
         <About></About>
         <Resume></Resume>
         <Works></Works>
+        <Contact></Contact>
       </div>
     );
   }
