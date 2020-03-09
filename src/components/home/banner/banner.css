@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
+    background-color: #3f5e8c;
 }
 
 .banner__wapper {

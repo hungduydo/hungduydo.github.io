@@ -6,15 +6,7 @@ import { Banner, About, Resume, Works, Contact } from './index';
 export class Home extends Component {
   pages;
   componentDidMount() {
-    this.pages = new Pageable("#container", {
-      pips: true,
-      animation: 300,
-      delay: 0,
-      throttle: 50,
-      swipeThreshold: 150,
-      orientation: "vertical",
-      freeScroll: false,
-    });
+    this.initPagetable();
   }
 
   render() {
@@ -27,5 +19,17 @@ export class Home extends Component {
         <Contact></Contact>
       </div>
     );
+  }
+
+  initPagetable() {
+    this.pages = new Pageable("#container", {
+      pips: true,
+      animation: 700,
+      delay: 300,
+      throttle: 50,
+      swipeThreshold: 150,
+      orientation: "vertical",
+      freeScroll: true,
+    });
   }
 }
