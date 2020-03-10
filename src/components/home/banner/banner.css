@@ -13,9 +13,9 @@
     text-align: center;
     padding-bottom: 30px;
 }
+
 .banner__title {
-    font: 90px/1.1em 'Open Sans', sans-serif;
-    font-weight: bold;
+    font: bold 90px/1.1em 'Open Sans', sans-serif;
     color: #fff;
     letter-spacing: -2px;
     margin: 0 auto 18px auto;

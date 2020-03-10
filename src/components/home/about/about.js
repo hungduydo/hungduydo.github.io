@@ -18,7 +18,7 @@ export class About extends Component {
           <div className="about__info">
             <div className="info__tab">
               <h2>About me</h2>
-              <p>Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.</p>
+              <p>Have more than 7 years’ experience in front-end developer, I have strong knowledge about Angular, JavaScript, Object Oriented Programming and Objective-C.</p>
             </div>
             <div className="info__tab">
               <h2>Contact Details</h2>
