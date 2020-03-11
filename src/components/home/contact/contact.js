@@ -68,7 +68,6 @@ export class Contact extends Component {
   }
 
   handleSubmit = (event) => {
-    alert('A name was submitted: ' + this.state.name);
     event.preventDefault();
     const { name, subject, email, message } = this.state;
     ContactService.submitContact({ name, subject, email, message })
