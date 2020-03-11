@@ -26,7 +26,7 @@ export class Banner extends Component {
         </p>
         <p className="banner__social">
           {
-            this.socialLinks.map(it => (<a href={it.link} target="#"><FontAwesomeIcon icon={['fab', it.icon]} /></a>))
+            this.socialLinks.map((it, index) => (<a href={it.link} key={index} target="#"><FontAwesomeIcon icon={['fab', it.icon]} /></a>))
           }
         </p>
         </div>

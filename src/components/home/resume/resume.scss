@@ -44,3 +44,34 @@
     }
   }
 }
+.skill {
+  margin-top: 36px;
+  list-style: none;
+  padding: 0;
+}
+.skill__item {
+  position: relative;
+  margin-bottom: 40px;
+  background: #ccc;
+  height: 20px;
+  border-radius: 3px;
+
+  em {
+    font: 15px "opensans-bold", sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    position: relative;
+    top: -26px;
+  }
+
+  span {
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    border-radius: 3px;
+    background-color: #313131;
+  }
+}

@@ -1,7 +1,7 @@
 import Pageable from 'pageable';
 import React, { Component } from 'react';
 import './home.css';
-import { Banner, About, Resume, Works, Contact } from './index';
+import { About, Banner, Contact, Resume } from './index';
 
 export class Home extends Component {
   pages;
@@ -15,7 +15,6 @@ export class Home extends Component {
         <Banner></Banner>
         <About></About>
         <Resume></Resume>
-        <Works></Works>
         <Contact></Contact>
       </div>
     );
