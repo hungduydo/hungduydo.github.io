@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './contact.scss';
 import ContactService from '../../../api/contact';
 
-export class Contact extends Component {
+class Contact extends Component {
 
   constructor(props) {
     super(props);
@@ -77,5 +77,6 @@ export class Contact extends Component {
       }
     });
   }
-
 }
+
+export default Contact;

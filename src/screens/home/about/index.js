@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Image } from 'react-bootstrap';
 import './about.css';
 
-export class About extends Component {
+const About = () => {
 
-  componentDidMount() {
-
-  }
-
-  render() {
     return (
       <div data-anchor="about" className="about">
         <div className="about__wapper">
@@ -34,5 +29,6 @@ export class About extends Component {
 
       </div>
     );
-  }
 }
+
+export default About;
