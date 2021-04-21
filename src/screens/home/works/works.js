@@ -9,7 +9,7 @@ export class Works extends Component {
 
   render() {
     return (
-      <div data-anchor="works" className="works">
+      <div id="works" className="works">
         <div className="container">
           <div className="resume__item row">
             <div className="col-md-4 resume__item__title">

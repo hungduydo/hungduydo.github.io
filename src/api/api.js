@@ -5,5 +5,6 @@ export var api = axios.create({
 });
 
 export function handleError(error) {
-    return 'not implement';
+  console.log(error);
+  return 'not implement';
 }

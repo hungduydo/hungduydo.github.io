@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import './banner.css';
+import './banner.scss';
 
 const Banner = () => {
   const socialLinks = [
@@ -14,7 +14,7 @@ const Banner = () => {
   const description = `I'm a (Your City) based (Your Occupation Here). Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer.`
   
   return (
-    <div data-anchor="banner" className="banner">
+    <div className="banner" id="banner">
       <div className="banner__wapper">
         <h1 className="banner__title">Hi! I'm Hung</h1>
         <p className="banner__desc">

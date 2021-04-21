@@ -16,13 +16,9 @@ class Contact extends Component {
     };
   }
 
-  componentDidMount() {
-
-  }
-
   render() {
     return (
-      <div data-anchor="contact" className="contact">
+      <div id="contact" className="contact">
         <Container>
           <Row className="contact__head">
             <Col md={2}><FontAwesomeIcon icon="envelope" size="5x" color="white" /></Col>
@@ -49,7 +45,7 @@ class Contact extends Component {
                     <textarea cols="30" rows="6" name="message" onChange={this.handleChange} className={this.state.isMessageValid}></textarea>
                   </div>
                   <div>
-                    <button className="submit">Submit</button>
+                    <button className="btn draw-border">Submit</button>
                   </div>
                 </fieldset></form>
             </Col>
@@ -73,7 +69,7 @@ class Contact extends Component {
     ContactService.submitContact({ name, subject, email, message })
     .then(res => {
       if (res) {
-        alert('Your message sent, i will contact soon');
+        alert(`Your message sent, i will contact soon ${res}`);
       }
     });
   }

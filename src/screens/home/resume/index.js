@@ -6,7 +6,7 @@ const Resume = () => {
 
   return (
     <div>
-      <div data-anchor="resume" className="resume">
+      <div id="resume" className="resume">
         <div className="resume__wapper container">
           <div className="resume__item row">
             <div className="col-md-4 resume__item__title">
@@ -38,7 +38,6 @@ const Resume = () => {
           </div>
         </div>
       </div>
-      <Works />
     </div >
   );
 }

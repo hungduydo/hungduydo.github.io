@@ -16,7 +16,7 @@ const Footer = () => {
     <div className="footer" data-anchor="footer">
       <Row>
         <Col>
-          <p className="banner__social">
+          <p className="banner__social footer">
             {
               socialLinks.map((it, index) => (<a href={it.link} key={index} target="#"><FontAwesomeIcon icon={['fab', it.icon]} /></a>))
             }
