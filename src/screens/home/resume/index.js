@@ -26,8 +26,8 @@ const Resume = () => {
               <h1>Skills</h1>
             </div>
             <div className="col-md-8 resume__item__body">
-              <ul className="skill">
-                <SkillBar name="Javascript" level="4"></SkillBar>
+              <ul className="skill" data-aos="zoom-out-down">
+                <SkillBar name="Javascript" level="5"></SkillBar>
                 <SkillBar name="Angular" level="4"></SkillBar>
                 <SkillBar name="HTML/CSS" level="5"></SkillBar>
                 <SkillBar name="Java" level="3"></SkillBar>

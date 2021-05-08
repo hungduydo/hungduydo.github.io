@@ -73,5 +73,17 @@
     top: 0;
     border-radius: 3px;
     background-color: #313131;
+    transition: width 1s;
+  }
+}
+
+.aos-init .skill__item span {
+  width: 0;
+}
+.aos-init.aos-animate .skill__item {
+  @for $i from 1 through 5 {
+    .level-#{$i} {
+        width: percentage($i*0.2);
+    }
   }
 }
