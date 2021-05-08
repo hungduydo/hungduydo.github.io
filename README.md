@@ -1,4 +1,4 @@
-Project build for deploy an web page on hungduydo.github.io
+Project build for deploy an web page on hungduydo.github.io branch master
 
 ## Available Scripts
 
